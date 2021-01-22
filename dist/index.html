@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form-validation22</title>
+    
+    <!-- css links -->
+    <link rel="stylesheet" href="./assets/css/vandor.css">
+    <link rel="stylesheet" href="./assets/css/bundle.css">
+
+    <!--font-awesome cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    
+    
+</head>
+<body>
+    <div class="container">
+        <div id="form-parent">
+            <form class="row g-3 needs-validation" novalidate>
+
+
+                <div class="form-title col-sm-12">
+                    <h3>
+                        Form Kaydit
+                        
+                    </h3>
+                    <hr>
+                </div>
+
+
+                <div class="col-md-6">
+                    <label for="validationCustom01" class="form-label">Adınızı giriniz :</label>
+                    <input type="text" class="form-control" id="validationCustom01" placeholder="Adınızı giriniz.." required>
+                    <div id="error1" class="valid-feedback">
+                        
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-6">
+                    <label for="validationCusemail" class="form-label">E-postanızı giriniz :</label>
+                    <input type="email" class="form-control" id="validationCusemail" placeholder="name@example.com" required>
+                    <div id="error2"  class="valid-feedback ">
+                    
+                    </div>
+                </div>
+
+
+                <div class="col-md-6">
+                    <label for="validationCustom04" class="form-label col-sm-12">Gerekli Hizmetler</label>
+                    <select class="form-select col-sm-12"  id="validationCustom041" required>
+                        <option disabled selected value="">select Hizmetler</option>
+                        <option  value="1">Online mağaza1</option>
+                        <option  value="2">Online mağaza2</option>
+                        <option  value="3">Online mağaza3</option>
+                    </select>
+                    <div id="error3" class="invalid-feedback">
+                        Please select a valid state.
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-6">
+                    <label for="validationCustom04" class="form-label col-sm-12">bütçe</label>
+                    <select class="form-select col-sm-12"  id="validationCustom042" required>
+                        <option  disabled selected value="">Select Bütçe</option>
+                        <option   value="1">Select Bütçe1</option>
+                        <option   value="2">Select Bütçe1</option>
+                        <option   value="3">Select Bütçe3</option>
+                    </select>
+                    <div id="error4" class="invalid-feedback">
+                        Please select a valid bütçe.
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-12">
+                    <label for="validationCustom01" class="form-label">Message..</label>
+                    <input type="text" class="form-control" id="validationtextArea" placeholder="your Message here...." required>
+                    <div id="error10" class="valid-feedback">
+                        
+                    </div>
+                </div>
+
+
+
+
+                
+                <div class="col-12">
+                    <button id="but" class="btn" type="submit">Submit Form <i class="fas fa-long-arrow-alt-right"></i></button>
+                </div>
+
+
+
+                </form>
+        </div>
+    </div>
+    <script src="./assets/js/vandor.min.js"></script>
+    <script src="./assets/js/bundle.js"></script>
+</body>
+</html>
